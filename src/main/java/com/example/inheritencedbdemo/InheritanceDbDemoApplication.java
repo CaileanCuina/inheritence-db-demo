@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InheritenceDbDemoApplication {
+public class InheritanceDbDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InheritenceDbDemoApplication.class, args);
+		SpringApplication.run(InheritanceDbDemoApplication.class, args);
 	}
 
 }

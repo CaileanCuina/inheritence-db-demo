@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: org.h2.Driver
+        username: sa
+        password:
+        url: "jdbc:h2:mem:db1;MODE=MSSQLServer;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS dbo\\;SET SCHEMA dbo"
+    h2:
+        console:
+            enabled: true
+    liquibase:
+        enabled: true
+        change-log: classpath:db/changelog-master.yaml
+        contexts: h2

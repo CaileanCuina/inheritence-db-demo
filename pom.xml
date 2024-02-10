@@ -9,14 +9,21 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>inheritence-db-demo</artifactId>
+    <artifactId>inheritance-db-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>inheritence-db-demo</name>
-    <description>inheritence-db-demo</description>
+    <name>inheritance-db-demo</name>
+    <description>inheritance-db-demo</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
+        <springdoc.version>1.7.0</springdoc.version>
+        <swagger-core-annotations.version>2.2.11</swagger-core-annotations.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.26.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -28,6 +35,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.2.0</version>
         </dependency>
 
         <dependency>
